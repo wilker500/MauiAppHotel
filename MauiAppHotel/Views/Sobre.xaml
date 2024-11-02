@@ -1,0 +1,59 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHotel.Views.Sobre"
+             Title="Sobre">
+
+    <ContentPage.BackgroundColor>
+        <Color>#E0E0E0</Color>
+        <!-- Cor de fundo -->
+    </ContentPage.BackgroundColor>
+
+    <VerticalStackLayout Padding="20" Spacing="20" HorizontalOptions="Center" VerticalOptions="Center">
+
+        <!-- Título -->
+        <Label Text="Sobre o Aplicativo"
+               FontSize="30"
+               FontAttributes="Bold"
+               TextColor="#3E206D"
+               HorizontalOptions="Center" />
+
+        <!-- Caixa de informações com borda -->
+        <Frame BackgroundColor="White" CornerRadius="10" Padding="20" HasShadow="True" BorderColor="#3E206D">
+            <VerticalStackLayout Spacing="10">
+                <Label Text="Este aplicativo foi desenvolvido para facilitar o gerenciamento de hospedagens."
+                       FontSize="18"
+                       FontFamily="Kalam"
+                       TextColor="#3E206D"
+                       HorizontalOptions="Center" />
+
+                <Label Text="Desenvolvido por: Wilker Branquinho Cunha"
+                       FontSize="18"
+                       FontFamily="Kalam"
+                       TextColor="#3E206D"
+                       HorizontalOptions="Center" />
+
+                <Label Text="Versão: 1.0"
+                       FontSize="18"
+                       FontFamily="Kalam"
+                       TextColor="#3E206D"
+                       HorizontalOptions="Center" />
+
+                <Label Text="Data de Lançamento: 28/10/2024"
+                       FontSize="18"
+                       FontFamily="Kalam"
+                       TextColor="#3E206D"
+                       HorizontalOptions="Center" />
+            </VerticalStackLayout>
+        </Frame>
+
+        <!-- Botão Voltar -->
+        <Button Text="Voltar"
+                BackgroundColor="#3E206D"
+                TextColor="White"
+                CornerRadius="20"
+                Padding="10"
+                HorizontalOptions="Center"
+                WidthRequest="100"
+                Clicked="OnVoltarButtonClicked" />
+    </VerticalStackLayout>
+</ContentPage>
