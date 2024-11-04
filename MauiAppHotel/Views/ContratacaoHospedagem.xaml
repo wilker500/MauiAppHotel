@@ -49,7 +49,8 @@
                     </Grid>
                 <Label Text="Escolha sua Suíte" />
                 <Picker x:Name="pck_quarto"
-                        Title="Selecione sua acomodação" />
+                        Title="Selecione sua acomodação" 
+                        ItemDisplayBinding="{Binding Descricao}"/>
                 
                 <Frame Padding="10"
                        Margin="10">
@@ -58,6 +59,7 @@
                         <HorizontalStackLayout>
                             <Label Text="Check-in:" />
                             <DatePicker x:Name="dtpck_checkin"
+                                        DateSelected="dtpck_checkin_DateSelected"
                                         Format="dd/MM/yyyy" />
                         </HorizontalStackLayout>
                         
@@ -73,7 +75,8 @@
 
                 <Button Text="Avançar" 
                         Padding="10"
-                        Margin="10"/>
+                        Margin="10"
+                        Clicked="Button_Clicked"/>
 
                 <Button Text="Sobre" Padding="10" Margin="10" Clicked="OnSobreButtonClicked" />
 
