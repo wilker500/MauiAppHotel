@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHotel.Views.SobreHotel"
+             Title="SobreHotel">
+    <ContentPage.BackgroundColor>
+        <Color>#E0E0E0</Color>
+        <!-- Cor de fundo -->
+    </ContentPage.BackgroundColor>
+
+    <VerticalStackLayout Padding="20" Spacing="20" HorizontalOptions="Center" VerticalOptions="Center">
+
+        <!-- Título -->
+        <Label Text="Sobre o Hotel"
+               FontSize="30"
+               FontAttributes="Bold"
+               TextColor="#3E206D"
+               HorizontalOptions="Center" />
+
+        <!-- Caixa de informações com borda -->
+        <Frame BackgroundColor="White" CornerRadius="10" Padding="20" HasShadow="True" BorderColor="#3E206D">
+            <VerticalStackLayout Spacing="10" Margin="10">
+                <Label Text="Um hotel cinco estrelas é o auge da elegância e conforto, oferecendo serviços exclusivos e personalizados para uma experiência incomparável.Os quartos são espaçosos e decorados com materiais de alta qualidade, incluindo roupa de cama luxuosa, móveis sofisticados e tecnologia moderna.As áreas comuns, como o lobby e o lounge, são amplas e apresentam design sofisticado, criando um ambiente acolhedor e refinado. Esse tipo de hotel oferece uma gama de comodidades premium, como piscinas, spa, academia completa, restaurantes gourmet e serviço de quarto 24 horas.Além disso, há uma equipe altamente treinada, sempre pronta para atender a todas as necessidades dos hóspedes com discrição e eficiência. O objetivo principal é proporcionar uma estadia memorável e personalizada, seja para uma viagem de negócios ou lazer."
+               VerticalTextAlignment="Center"
+               
+               FontSize="15"
+               FontFamily="Kalam"
+               TextColor="#3E206D"
+               LineBreakMode="WordWrap"
+               HorizontalOptions="FillAndExpand" />
+
+                <Label Text="Desenvolvido por: Wilker Branquinho Cunha"
+               FontSize="18"
+               FontFamily="Kalam"
+               TextColor="#3E206D"
+               HorizontalOptions="Center" />
+            </VerticalStackLayout>
+        </Frame>
+
+        <!-- Botão Voltar -->
+        <Button Text="Voltar"
+                BackgroundColor="#3E206D"
+                TextColor="White"
+                CornerRadius="20"
+                Padding="10"
+                HorizontalOptions="Center"
+                WidthRequest="100"
+                Clicked="OnVoltarButtonClicked" />
+        
+    </VerticalStackLayout>
+</ContentPage>

@@ -36,6 +36,19 @@ public partial class ContratacaoHospedagem : ContentPage
         }
     }
 
+    // Método para o botão "Sobre o Hotel"
+    private async void OnSobreHotelButtonClicked(object sender, EventArgs e)
+    {
+        try
+        {
+            await Navigation.PushAsync(new SobreHotel()); // Redireciona para a página "SobreHotel"
+        }
+        catch (Exception ex)
+        {
+            await DisplayAlert("Ops", ex.Message, "OK");
+        }
+    }
+
     private void dtpck_checkin_DateSelected(object sender, DateChangedEventArgs e)
     {
         DatePicker elemento = sender as DatePicker;

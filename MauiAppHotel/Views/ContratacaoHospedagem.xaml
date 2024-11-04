@@ -80,6 +80,14 @@
 
                 <Button Text="Sobre" Padding="10" Margin="10" Clicked="OnSobreButtonClicked" />
 
+                <Button Text="Sobre o Hotel" Padding="10" Margin="10" Clicked="OnSobreHotelButtonClicked" />
+
+
+
+
+
+
+
 
 
 
